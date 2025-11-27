@@ -86,7 +86,7 @@ function fetchRowsPaged($connect, $table, $cols, $page, $recordsPerPage, $prefix
     }
     return array('rows' => $rows, 'total_pages' => $total_pages, 'page' => $page, 'total' => $total);
 }
-$users_cols = array('id_user', 'login', 'email', 'phone', 'first_name', 'last_name', 'patronymic', 'id_rule');
+$users_cols = array('id_user', 'login', 'email', 'phone', 'password', 'first_name', 'last_name', 'patronymic', 'id_rule');
 $reviews_cols = array('id_review', 'id_user', 'id_rent', 'rating', 'comment', 'date', 'show_first_name', 'show_last_name', 'show_patronymic', 'show_login', 'id_moder_status');
 $rents_cols = array('id_rent', 'id_user', 'id_product', 'price', 'date', 'time', 'id_status');
 $products_cols = array('id_product', 'name_product', 'photo', 'price', 'weight', 'bucket_volume', 'digging_depth', 'engine_power', 'dimensions', 'speed', 'available', 'id_type');
